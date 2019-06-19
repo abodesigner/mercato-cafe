@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>MercatoCoffe</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+        <!-- Original Bootstrap 3.x -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Add font-awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+         <!-- Add Hover.css File -->
+        <link rel="stylesheet" href="css/hover.css">
+
+        <!-- Add animate.css File -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Add style.css File -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Add Media Query File -->
+        <link rel="stylesheet" href="css/media.css">
+
+        <!-- Add Sweetaleret File -->
+        <link rel="stylesheet" href="css/sweetalert.css">
+
+        <!-- Add font -->
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+        <!-- Add fanybox files -->
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+		<!-- Loading -->
+        <div id="depreload" style="background-image:url('images/bg.jpg');" class="table">
+            <div class="table-cell wrapper">
+                <img src="images/cup.gif" class="logo" alt="logo" />
+                <p class="perc"></p>
+                <p class="logo-text">Mercato</p>
+            </div>
+        </div>
+
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top mercato-nav">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main" aria-expanded="false">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#">
+	                    <img src="images/logo_large.png" alt="logo" class="img-responsive" title="Mercato Logo">
+	                </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="main">
+                    <ul class="nav navbar-nav" id="menu-list">
+                        <li class="active item"><a data-scroll href="#aboutus">about us <span class="sr-only">(current)</span></a></li>
+                        <li class="pipe hidden-xs"></li>
+                        <li class="item"><a data-scroll href="#new-products">new products</a></li>
+                        <li class="pipe hidden-xs"></li>
+                        <li class="item" id="register"><a data-scroll href="#mercato-home">mercato home</a></li>
+                        <li class="pipe hidden-xs"></li>
+                        <li class="item"><a data-scroll href="#our-menu">our menu</a></li>
+                        <li class="pipe hidden-xs"></li>
+                        <li class="item"><a data-scroll href="#reviews">reviews</a></li>
+                        <li class="pipe hidden-xs"></li>
+                        <li class="item"><a data-scroll href="#location">location</a></li>
+
+                    </ul>
+                    <div id="data">
+                        <div class="details">
+                            <span class="new"><a href="">Register Now</a></span>
+                            <span>|</span>
+                            <span class="member"><a href="">Already Member</a></span>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <input type="text" name="username" placeholder="User Name">
+                        <input type="password" name="pw" placeholder="Password">
+                        <button class="login">LOGIN</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start Carousel Slider -->
+        <div id="slider" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1" class="two"></li>
+                <li data-target="#slider" data-slide-to="2" class="third"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/slider1.jpg" alt="slider1" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/slider2.jpg" alt="slider2" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="images/slider3.jpg" alt="slider3" class="img-responsive">
+                </div>
+            </div>
+
+            <!-- Start Gallaery Icon @ top right -->
+            <div class="gallary-icon">
+                <a class="fancybox-gallarey" href="images/g1.jpg" data-scroll href="#new-products" title="gallarey-icon">
+                    <img src="images/gallary-icon.png"  alt="gallary-icon" class="img-responsive">
+                </a>
+            </div>
+            <!-- End Gallaery Icon @ top right -->
+        </div>
+        <!-- End Carousel Slider -->
+
+        <!-- Start About-Us Section -->
+        <section class="aboutus " id="aboutus">
+            <div class="head">
+                <h1 class="text-center">about us</h1>
+            </div>
+            <div class="contents">
+                <div class="container">
+                    <p class="lead">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- End About-Us Section -->
+
+        <!-- Start New Products Section -->
+        <section class="our-products" id="new-products">
+            <div class="header">
+                <h1 class="text-center">new products</h1>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product">
+                                <img src="images/01.png" alt="product1" class="img-responsive">
+                            </div>
+                        </div>
+                         <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product">
+                                <img src="images/02.png" alt="product2" class="img-responsive">
+                            </div>
+                        </div>
+                         <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="product">
+                                <img src="images/03.png" alt="product3" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End New Products Section-->
+
+        <!-- Start Mercato Home Section -->
+        <section class="mercato-home" id="mercato-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="left">
+                            <h1>Mercato Home</h1>
+                            <img src="images/kahwa.png" alt="kahwa" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <span class="divider"></span>
+                        <div class="right">
+                            <div class="club">
+                                <h2>Join the Coffee Club today</h2>
+                                <p class="lead">
+                                    Register your card to enjoy everything from free treats<br> and secret events tounlimited Wi-Fi, bonus rewards <br>and exclusive offers.<br>Plus 100 bonus points.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mercato-animate">
+           <!--  <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <div class="block">
+                            <img src="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12"></div>
+                    <div class="col-md-3 col-xs-12"></div>
+                </div>
+            </div> -->
+            <div class="container-fluid noPadding">
+                <img src="images/mercato-home2.jpg" alt="mercatoclub" class="img-responsive">
+            </div>
+        </section>
+        <!--End Mercato Home Section-->
+
+        <!-- Start Our Menu Section -->
+        <section class="our-menu" id='our-menu'>
+            <h1 class="text-center">Our Menu</h1>
+
+            <div class="controls">
+                 <button class="btn btn-success" type="button" data-mixitup-control data-filter="all">
+                    All
+                </button>
+
+                <a class="open_fancybox" href="images/111.jpg">
+                    <button class="btn btn-success" type="button">
+                        Our Menu
+                    </button>
+                </a>
+
+                <button class="btn btn-success" type="button" data-mixitup-control data-filter=".coldDrinks" id="cold-drinks">
+                    Cold drinks
+                </button>
+
+                <button class="btn btn-success" type="button" data-mixitup-control data-filter=".hotDrinks" id="hot-drinks">
+                    Hot drinks
+                </button>
+
+                <button class="btn btn-success" type="button" data-mixitup-control data-filter=".bakery" id="bakery">
+                    Bakery
+                </button>
+
+                <button class="btn btn-success remove" type="button" data-mixitup-control data-filter=".deserts"  id="desert">
+                    Desert
+                </button>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 noPadding mix coldDrinks" data-order="1"><img src="images/prod1.png" alt="1" class="img-responsive"></div>
+                    <div class="col-md-3 col-xs-6 noPadding mix bakery"     data-order="2"><img src="images/prod2.png" alt="2" class="img-responsive"></div>
+                    <div class="col-md-3 col-xs-6 noPadding mix coldDrinks" data-order="3"><img src="images/prod3.png" alt="3" class="img-responsive"></div>
+                    <div class="col-md-3 col-xs-6 noPadding mix deserts"    data-order="4"><img src="images/prod4.png" alt="4" class="img-responsive"></div>
+
+                    <div class="col-md-3 col-xs-6 noPadding mix hotDrinks"><img src="images/prod5.png" alt="5" class="img-responsive"></div>
+                    <div class="col-md-3 col-xs-6 noPadding mix hotDrinks"><img src="images/prod6.png" alt="6" class="img-responsive"></div>
+                    <div class="col-md-3 col-xs-6 noPadding mix deserts">  <img src="images/prod7.png" alt="7" class="img-responsive"></div>
+                    <div class="col-md-3 col-xs-6 noPadding mix deserts">  <img src="images/prod8.png" alt="9" class="img-responsive"></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Our-Menu Section -->
+
+        <!-- Start Our-Location Section -->
+        <section class="location" id="location">
+            <div class="top">
+                <h1 class="text-center">Our Location</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12 address">
+                            <h3>address</h3>
+                            <p class="lead">mercato coffee tanta hassan radwan street</p>
+                            <p class="lead">mercato coffee tanta hassan radwan street</p>
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1Epq2-yEr6OOAEsbePQw1pFAWCEM"  width="750" height="470" style="border:0" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Our-Location Section -->
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 footer-heading">
+                        <h2>Coming <span class="soon">Soon</span></h2>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="download">
+                            <ul class="buttons">
+                                <li><a href="#"><img src="images/appstore.png" alt="appstore" class="icon"></a></li>
+
+                                <li><a href="#"><img src="images/googlePlay.png" alt="googlePlay" class="icon"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="https://www.facebook.com/mercato.coffee.bakery/"><img src="images/fb.png" alt="facebook" class="img-responsive"></a></li>
+
+                                <li><a href="http://www.instegram.com"><img src="images/instgram.png" alt="instgram" class="img-responsive"></a></li>
+
+                                <li><a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter.png" class="img-responsive"></a></li>
+
+                                <li><a href="http://www.youtube.com"><img src="images/ytube.png" alt="youtube" class="img-responsive"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 footer-menu">
+                        <ul class="navigation">
+                            <li><a data-scroll href="#slider" >Home</a></li>
+                            <li><a data-scroll href="#aboutus" >About Us</a></li>
+                            <li><a data-scroll href="#new-products" >New Products</a></li>
+                            <li><a data-scroll href="#mercato-home" >Mercato Home</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 copyright">
+                        <p>All rights are reserved to Mercato Coffee</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" id="scrollup"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+
+
+
+
+
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.DEPreLoad.js"></script>
+    <script src="js/hiddencollapse.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+	   smoothScroll.init();
+    </script>
+    <script src="js/scrollUp.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+
+    <!-- Add fancybox -->
+    <script src="fancybox/lib/jquery.mousewheel.pack.js"></script>
+    <script src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+    <script src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    </body>
+
+</html>

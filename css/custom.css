@@ -1,0 +1,134 @@
+/* ADD FONT Yanone Kaffeesatz */
+@font-face {
+    font-family: "coffee";
+    src: url(../fonts/Kaffeesatz/YanoneKaffeesatz-Medium.ttf);
+}
+
+/* GENERAL RULES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "coffee";
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #b11f25;
+}
+
+/* NAVBAR */
+.navbar-custom {
+    background-color: #5a1c1d;
+    position: relative;
+}
+.navbar-brand img.img-fluid {
+    width: 100px;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-family: "coffee";
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #ff9a00;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff9a00;
+}
+
+/* ABOUT US */
+.about-section {
+    background-color: #dfeffd;
+}
+.about-section h2 {
+    color: #5a1c1d;
+}
+.about-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-section-content p.lead {
+    flex-grow: 2;
+}
+.about-section-content img {
+    /* clip-path: polygon(67% 0, 100% 0%, 100% 100%, 0% 100%); */
+    flex-grow: 1;
+}
+
+/* PRODUCTS-SECTION */
+.products-section {
+    min-height: 500px;
+}
+
+/* .item {
+    width: 200px;
+    height: 200px;
+    background-color: #ff9a00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* MERCATO CLUB */
+.mercato-club {
+    background-color: #f7d1ba;
+}
+
+/* MENU */
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.controls > button,
+.controls > a {
+    margin: 20px 10px;
+}
+
+.btn-outline-brown {
+    border-color: #b11f25;
+    color: #b11f25;
+}
+
+.btn-outline-brown:hover {
+    background-color: #b11f25;
+    color: #fff;
+}
+
+/* CONTACT US */
+.contact {
+    min-height: 600px;
+    background-color: #d9d8d2;
+}
+
+.contact-content {
+    padding: 10px;
+}
+.contact-content .fas.fa-envelope,
+.contact-content .fas.fa-map-marker-alt,
+.contact-content .fas.fa-phone-alt {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* FOOTER */
+.footer {
+    min-height: 300px;
+}
+
+.footer .fab {
+    color: #b11f25;
+}
+
+.fas.fa-shopping-cart {
+    color: #fff;
+}

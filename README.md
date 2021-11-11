@@ -1,2 +1,3 @@
-# mercato-Coffee
-Simple website for coffee cafe
+# mercato-Cafe
+
+Website for coffee cafe

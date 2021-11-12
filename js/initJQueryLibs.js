@@ -21,7 +21,7 @@ $(document).ready(function(){
         }
     })
 
-    var mixer = mixitup('#our-menu', {
+    var mixer = mixitup('#menu', {
         selectors:{
         control: '[data-mixitup-control]'
     }

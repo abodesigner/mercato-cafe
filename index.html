@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!-- Add animate.css File -->
     <link rel="stylesheet" href="css/animate.css">
 
@@ -50,19 +53,19 @@
                         <a class="nav-link active hvr-underline-from-center" aria-current="page" href="#">About Us</a>
                     </li>
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link hvr-underline-from-center" href="#">New Products</a>
+                        <a class="nav-link hvr-underline-from-center" href="#products">New Products</a>
                     </li>
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link hvr-underline-from-center" href="#">Our Menu</a>
+                        <a class="nav-link hvr-underline-from-center" href="#menu">Our Menu</a>
                     </li>
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link hvr-underline-from-center" href="#">Mercato Home</a>
+                        <a class="nav-link hvr-underline-from-center" href="#mercato-home">Mercato Home</a>
                     </li>
                     <li class="nav-item ms-lg-4">
                         <a class="nav-link hvr-underline-from-center" href="#">Reviews</a>
                     </li>
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link hvr-underline-from-center" href="#">Location</a>
+                        <a class="nav-link hvr-underline-from-center" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <i class="fas fa-shopping-cart"></i>
@@ -119,7 +122,7 @@
                 <div class="col-lg-6">
 
                     <div class="vedio-block">
-                        <video width="520" height="500" controls>
+                        <video controls>
                             <source src="video.mp4" type="video/mp4">
                             <source src="video.mp4" type="video/ogg">
                             Your browser does not support the video tag.
@@ -130,8 +133,8 @@
         </div>
     </div>
 
-    <!-- NEW PRODUCTS -->
-    <div class="products-section bg-light py-5">
+    <!-- PRODUCTS SECTION -->
+    <div class="products-section bg-light py-5" id="products">
         <div class="container">
             <h2 class="heading mb-4">Latest Products</h2>
             <!-- Set up your HTML -->
@@ -321,7 +324,7 @@
     </div>
 
     <!-- MERCATO HOME -->
-    <div class="mercato-home-setion text-center">
+    <div class="mercato-home-setion text-center" id="mercato-home">
         <div class="container-fluid px-0">
             <div class="mercato-club pt-5">
                 <h2 class="heading">Join the Coffee Club today!</h2>
@@ -338,7 +341,7 @@
     </div>
 
     <!-- MENU -->
-    <div class="our-menu py-4" id='our-menu'>
+    <div class="our-menu py-4" id='menu'>
         <h1 class="heading text-center">Our Menu</h1>
 
         <div class="controls">
@@ -499,13 +502,12 @@
     </div>
 
     <!-- CONTACT -->
-    <div class="contact py-5 bg-dark" id="contact">
-        <div class="container">
-            <h2 class="heading">Contact Us</h2>
-
+    <div class="contact" id="contact">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6">
-                    <form class="row bg-white py-4">
+                <div class="col-lg-4">
+                    <form class="row bg-light py-4">
+                        <h2 class="heading">Contact Us</h2>
                         <div class="col-lg-6">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Your Name</label>
@@ -534,127 +536,65 @@
 
                     </form>
                 </div>
-                <div class="col-lg-6">
-                    <div id="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.42222008074975!2d31.00268208786185!3d30.792038989823308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c971b105058b%3A0x7f4c6af4c35775bc!2z2YXZitix2YPYp9iq2Yg!5e0!3m2!1sar!2seg!4v1636564839413!5m2!1sar!2seg"
-                            width="100%" height="550" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
-                    </div>
+                <div class="col-lg-8 px-0">
+                    <iframe id="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.42222008074975!2d31.00268208786185!3d30.792038989823308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c971b105058b%3A0x7f4c6af4c35775bc!2z2YXZitix2YPYp9iq2Yg!5e0!3m2!1sar!2seg!4v1636564839413!5m2!1sar!2seg"
+                        style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-            <!-- <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact-content bg-light d-flex justify-content-between">
-                        <div class="email d-flex justify-content-start align-items-center">
-                            <i class="fas fa-envelope bg-dark p-5"></i>
-                            <div class="d-flex flex-column ms-3">
-                                <h3>EMAIL ADDRESS</h3>
-                                <p class="mb-0">Info@mercato@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="location d-flex justify-content-start align-items-center">
-                            <i class="fas fa-map-marker-alt bg-dark p-5"></i>
-                            <div class="d-flex flex-column ms-3">
-                                <h3>OUR LOCATION</h3>
-                                <p class="mb-0">Hassan Radwan St.</p>
-                                <p class="mb-0">+201028281010</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form class="row mb-4 pb-3 g-3 bg-light">
-                        <div class="col-lg-6">
-                            <label for="inputEmail4" class="form-label">Your Name:</label>
-                            <input type="text" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="col-ld-6">
-                            <label for="inputPassword4" class="form-label">Your Mail</label>
-                            <input type="email" class="form-control" id="inputPassword4">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-
-
-                        <div class="col-12">
-                            <textarea cols="30" class="form-control" rows="10">Message</textarea>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-outline-brown">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <div id="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.42222008074975!2d31.00268208786185!3d30.792038989823308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c971b105058b%3A0x7f4c6af4c35775bc!2z2YXZitix2YPYp9iq2Yg!5e0!3m2!1sar!2seg!4v1636564839413!5m2!1sar!2seg"
-                            width="100%" height="550" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div> -->
         </div>
-
     </div>
 
     <!-- FOOTER -->
-    <footer class="footer py-5" id="footer">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-4">
-                    <img src="images/logo_large.png" width="100px" class="img-fluid mb-4" alt="">
-                    <p class="text-muted">Rorem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniaminventore veritatis et.orem ipsum dolorconsectetur
-                        adipisicing elit, sed do eiusmod tempor incididunt aneye.</p>
-                    <div class="d-flex justify-content-center">
-                        <a href="https://www.facebook.com/mercato.coffee.bakery/">
-                            <i class="fab fa-facebook-square fa-2x mx-3"></i>
-                        </a>
+    <footer class="footer" id="footer">
+        <div class="dark-overlay py-5">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-4">
+                        <img src="images/logo_large.png" width="100px" class="img-fluid mb-4" alt="">
+                        <p class="text-white">Rorem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniaminventore veritatis et.orem ipsum
+                            dolorconsectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt aneye.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://www.facebook.com/mercato.coffee.bakery/">
+                                <i class="fab fa-facebook-square fa-2x mx-3"></i>
+                            </a>
 
-                        <a href="http://www.instegram.com">
-                            <i class="fab fa-linkedin fa-2x mx-3"></i>
-                        </a>
+                            <a href="http://www.instegram.com">
+                                <i class="fab fa-linkedin fa-2x mx-3"></i>
+                            </a>
 
-                        <a href="http://www.twitter.com">
-                            <i class="fab fa-twitter-square fa-2x mx-3"></i>
-                        </a>
+                            <a href="http://www.twitter.com">
+                                <i class="fab fa-twitter-square fa-2x mx-3"></i>
+                            </a>
 
-                        <a href="http://www.youtube.com">
-                            <i class="fab fa-youtube-square fa-2x mx-3"></i>
-                        </a>
+                            <a href="http://www.youtube.com">
+                                <i class="fab fa-youtube-square fa-2x mx-3"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="download-btn d-flex justify-content-center">
-                        <a href="#">
-                            <img src="images/appstore.png" alt="appstore" class="img-fluid me-2">
-                        </a>
-                        <a href="#">
-                            <img src="images/googlePlay.png" alt="googlePlay" class="img-fluid">
-                        </a>
+                    <div class="col-lg-4">
+                        <div class="download-btn d-flex justify-content-center">
+                            <a href="#">
+                                <img src="images/appstore.png" alt="appstore" class="img-fluid me-2">
+                            </a>
+                            <a href="#">
+                                <img src="images/googlePlay.png" alt="googlePlay" class="img-fluid">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="d-flex flex-column align-items-center">
-                        <h3> CONTACT US </h3>
-                        <p> ADRESS: 8638 Amarica Stranfod Mailbon Star </p>
-                        <p> MAIL: Israfilsupol836@gmail.com</p>
-                        <p> FAX ID: +9 659459 49594</p>
-                        <p> PHONE: +7464 0187 3535 645 </p>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center text-white">
+                            <p> ADRESS: 8638 Amarica Stranfod Mailbon Star </p>
+                            <p> MAIL: Israfilsupol836@gmail.com</p>
+                            <p> FAX ID: +9 659459 49594</p>
+                            <p> PHONE: +7464 0187 3535 645 </p>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </footer>

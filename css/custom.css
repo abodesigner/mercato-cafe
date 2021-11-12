@@ -22,6 +22,10 @@ p {
     color: #b11f25;
 }
 
+.hvr-underline-from-center:before {
+    background: #ff9a00;
+}
+
 /* NAVBAR */
 .navbar-custom {
     background-color: #5a1c1d;
@@ -62,6 +66,12 @@ p {
 .about-section-content img {
     /* clip-path: polygon(67% 0, 100% 0%, 100% 100%, 0% 100%); */
     flex-grow: 1;
+}
+
+.vedio-block video {
+    /*CSS*/
+    width: 100%;
+    max-height: 100%;
 }
 
 /* PRODUCTS-SECTION */
@@ -107,7 +117,6 @@ p {
 /* CONTACT US */
 .contact {
     min-height: 600px;
-    background-color: #d9d8d2;
 }
 
 .contact-content {
@@ -120,13 +129,34 @@ p {
     font-size: 2rem;
 }
 
+#map {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 /* FOOTER */
 .footer {
-    min-height: 300px;
+    min-height: 400px;
+    background: url(../images/coffee-bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .footer .fab {
-    color: #b11f25;
+    color: #f8f8f8;
 }
 
 .fas.fa-shopping-cart {

@@ -6,10 +6,8 @@
 //                 if (scroll >= shrinkHeader) {
 //                     $('.navbar').addClass('shrink');
 //                     $('#menu-list li a').addClass('shrink');
-//                     $('.gallary-icon').addClass('shrink');
 //                 } else {
 //                     $('.navbar').removeClass('shrink');
-//                     $('.gallary-icon').removeClass('shrink');
 //                 }
 //             });
 

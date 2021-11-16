@@ -37,7 +37,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/logo_large.png" alt="logo" class="img-fluid logo">
@@ -50,7 +50,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ms-lg-4">
-                        <a class="nav-link active hvr-underline-from-center" aria-current="page" href="#">About Us</a>
+                        <a class="nav-link active hvr-underline-from-center" aria-current="page" href="#aboutus">About
+                            Us</a>
                     </li>
                     <li class="nav-item ms-lg-4">
                         <a class="nav-link hvr-underline-from-center" href="#products">New Products</a>
@@ -60,9 +61,6 @@
                     </li>
                     <li class="nav-item ms-lg-4">
                         <a class="nav-link hvr-underline-from-center" href="#mercato-home">Mercato Home</a>
-                    </li>
-                    <li class="nav-item ms-lg-4">
-                        <a class="nav-link hvr-underline-from-center" href="#">Reviews</a>
                     </li>
                     <li class="nav-item ms-lg-4">
                         <a class="nav-link hvr-underline-from-center" href="#contact">Contact</a>
@@ -97,7 +95,7 @@
     </div>
 
     <!-- ABOUT US -->
-    <div class="about-section" id="aboutus">
+    <section class="about-section" id="aboutus">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-lg-6">
@@ -131,10 +129,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- PRODUCTS SECTION -->
-    <div class="products-section bg-light py-5" id="products">
+    <section class="products-section bg-light py-5" id="products">
         <div class="container">
             <h2 class="heading mb-4">Latest Products</h2>
             <!-- Set up your HTML -->
@@ -321,10 +319,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- MERCATO HOME -->
-    <div class="mercato-home-setion text-center" id="mercato-home">
+    <section class="mercato-home-setion text-center" id="mercato-home">
         <div class="container-fluid px-0">
             <div class="mercato-club pt-5">
                 <h2 class="heading">Join the Coffee Club today!</h2>
@@ -338,22 +336,36 @@
                 <img src="images/mercato-home2.jpg" class="img-fluid" alt="">
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download" id="download">
+        <div class="dark-overlay py-5">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="images/logo_large.png" width="75px" class="img-fluid" alt="logo">
+                    <h4 class="text-white mt-4">Download our app Now.</h4>
+
+                    <div class="download-btn d-flex justify-content-center d-none d-lg-block">
+                        <a href="#">
+                            <img src="images/appstore.png" alt="appstore" class="img-fluid me-2">
+                        </a>
+                        <a href="#">
+                            <img src="images/googlePlay.png" alt="googlePlay" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- MENU -->
-    <div class="our-menu py-4" id='menu'>
+    <section class="our-menu py-4" id='menu'>
         <h1 class="heading text-center">Our Menu</h1>
-
         <div class="controls">
             <button class="btn btn-outline-brown" data-mixitup-control data-filter="all">
                 All
             </button>
-
-            <!-- <a class="open_fancybox" href="images/111.jpg">
-                <button class="btn btn-outline-brown" type="button">
-                    Our Menu
-                </button>
-            </a> -->
 
             <button class="btn btn-outline-brown" type="button" data-mixitup-control data-filter=".coldDrinks"
                 id="cold-drinks">
@@ -379,7 +391,9 @@
             <div class="row">
                 <div class="col-md-3 col-6 mix coldDrinks" data-order="1">
                     <div class="card shadow mb-5">
-                        <img src="images/prod1.png" alt="1" class="card-img-top">
+                        <div class="hover-effect">
+                            <img src="images/prod1.png" alt="1" class="card-img-top">
+                        </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">Ice Cream</h2>
@@ -394,7 +408,9 @@
                 </div>
                 <div class="col-md-3 col-6 mix bakery" data-order="2">
                     <div class="card shadow mb-5">
-                        <img src="images/prod2.png" alt="1" class="card-img-top">
+                        <div class="hover-effect">
+                            <img src="images/prod2.png" alt="1" class="card-img-top">
+                        </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">Ice Cream</h2>
@@ -409,7 +425,9 @@
                 </div>
                 <div class="col-md-3 col-6 mix deserts" data-order="3">
                     <div class="card shadow mb-5">
-                        <img src="images/prod3.png" alt="1" class="card-img-top">
+                        <div class="hover-effect">
+                            <img src="images/prod3.png" alt="1" class="card-img-top">
+                        </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">Ice Cream</h2>
@@ -424,7 +442,9 @@
                 </div>
                 <div class="col-md-3 col-6 mix hotDrinks" data-order="4">
                     <div class="card shadow mb-5">
-                        <img src="images/prod4.png" alt="1" class="card-img-top">
+                        <div class="hover-effect">
+                            <img src="images/prod4.png" alt="1" class="card-img-top">
+                        </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">Ice Cream</h2>
@@ -439,7 +459,9 @@
                 </div>
                 <div class="col-md-3 col-6 mix hotDrinks" data-order="5">
                     <div class="card shadow mb-5">
-                        <img src="images/prod5.png" alt="1" class="card-img-top">
+                        <div class="hover-effect">
+                            <img src="images/prod5.png" alt="1" class="card-img-top">
+                        </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">Ice Cream</h2>
@@ -454,7 +476,9 @@
                 </div>
                 <div class="col-md-3 col-6 mix deserts" data-order="6">
                     <div class="card shadow mb-5">
-                        <img src="images/prod6.png" alt="1" class="card-img-top">
+                        <div class="hover-effect">
+                            <img src="images/prod6.png" alt="1" class="card-img-top">
+                        </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">Ice Cream</h2>
@@ -469,7 +493,9 @@
                 </div>
                 <div class="col-md-3 col-6 mix deserts" data-order="7">
                     <div class="card shadow mb-5">
-                        <img src="images/prod7.png" alt="1" class="card-img-top">
+                        <div class="hover-effect">
+                            <img src="images/prod7.png" alt="1" class="card-img-top">
+                        </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">Ice Cream</h2>
@@ -484,7 +510,9 @@
                 </div>
                 <div class="col-md-3 col-6 mix bakery" data-order="8">
                     <div class="card shadow mb-5">
-                        <img src="images/prod8.png" alt="1" class="card-img-top">
+                        <div class="hover-effect">
+                            <img src="images/prod8.png" alt="1" class="card-img-top">
+                        </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <h2 class="card-title">Ice Cream</h2>
@@ -499,13 +527,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- CONTACT -->
-    <div class="contact" id="contact">
-        <div class="container-fluid">
+    <section class="contact" id="contact">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <form class="row bg-light py-4">
                         <h2 class="heading">Contact Us</h2>
                         <div class="col-lg-6">
@@ -536,69 +564,14 @@
 
                     </form>
                 </div>
-                <div class="col-lg-8 px-0">
+                <div class="col-lg-7 px-0">
                     <iframe id="map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.42222008074975!2d31.00268208786185!3d30.792038989823308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c971b105058b%3A0x7f4c6af4c35775bc!2z2YXZitix2YPYp9iq2Yg!5e0!3m2!1sar!2seg!4v1636564839413!5m2!1sar!2seg"
                         style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="footer" id="footer">
-        <div class="dark-overlay py-5">
-            <div class="container">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-4">
-                        <img src="images/logo_large.png" width="100px" class="img-fluid mb-4" alt="">
-                        <p class="text-white">Rorem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniaminventore veritatis et.orem ipsum
-                            dolorconsectetur
-                            adipisicing elit, sed do eiusmod tempor incididunt aneye.</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://www.facebook.com/mercato.coffee.bakery/">
-                                <i class="fab fa-facebook-square fa-2x mx-3"></i>
-                            </a>
-
-                            <a href="http://www.instegram.com">
-                                <i class="fab fa-linkedin fa-2x mx-3"></i>
-                            </a>
-
-                            <a href="http://www.twitter.com">
-                                <i class="fab fa-twitter-square fa-2x mx-3"></i>
-                            </a>
-
-                            <a href="http://www.youtube.com">
-                                <i class="fab fa-youtube-square fa-2x mx-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="download-btn d-flex justify-content-center">
-                            <a href="#">
-                                <img src="images/appstore.png" alt="appstore" class="img-fluid me-2">
-                            </a>
-                            <a href="#">
-                                <img src="images/googlePlay.png" alt="googlePlay" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center text-white">
-                            <p> ADRESS: 8638 Amarica Stranfod Mailbon Star </p>
-                            <p> MAIL: Israfilsupol836@gmail.com</p>
-                            <p> FAX ID: +9 659459 49594</p>
-                            <p> PHONE: +7464 0187 3535 645 </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>

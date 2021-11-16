@@ -1,4 +1,19 @@
 $(document).ready(function(){
+
+
+    // Calculate the offset value before section when navbar is fixed
+//   $('.nav-link').click(function() {
+//     let sectionId = $(this).attr('href');
+//     $('html, body').animate({
+//         scrollTop: $(sectionId).offset().top - 54
+//     }, 100);
+//   });
+
+
+
+
+
+
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
